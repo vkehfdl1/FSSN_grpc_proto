@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package clientstreaming;
 
+option go_package = "github.com/example/path/gen;gen";
+
 service ClientStreaming {
   // A Client streaming RPC.
    rpc GetServerResponse(stream Message) returns (Number) {}

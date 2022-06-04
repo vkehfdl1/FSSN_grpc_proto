@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package bidirectional;
 
+option go_package = "github.com/example/path/gen;gen";
+
 service Bidirectional {
   // A Bidirectional streaming RPC.
   //
