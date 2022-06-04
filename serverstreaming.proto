@@ -6,13 +6,13 @@ option go_package = "github.com/example/path/gen;gen";
 
 service ServerStreaming {
   // A Client streaming RPC.
-   rpc GetServerResponse(Number) returns (stream Message) {}
+   rpc GetServerResponse(ServerNumber) returns (stream ServerMessage) {}
 }
 
-message Message {
+message ServerMessage {
   string message = 1;
 }
 
-message Number {
+message ServerNumber {
   int32 value = 1;
 }
